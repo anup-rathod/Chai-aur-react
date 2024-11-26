@@ -1,0 +1,46 @@
+<% layout ("/layouts/boilerplate") %>
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Create a new Listing</h3>
+                    <form class="needs-validation" method="post" action="/listings" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="listing[title]" placeholder="Title" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a title.</div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="listing[description]" placeholder="Enter description" required></textarea>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a description.</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="listing[image]" placeholder="Enter image URL" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a valid image URL.</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="listing[price]" placeholder="Enter price" required>
+                         
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="listing[country]" placeholder="Enter country" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a country.</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="listing[location]" placeholder="Enter location" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a location.</div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
